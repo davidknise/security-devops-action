@@ -9,7 +9,7 @@ jobs:
 
     # MSDO runs on windows-latest.
     # ubuntu-latest and macos-latest supporting coming soon
-    runs-on: windows-latest
+    runs-on: ubuntu-latest
 
     steps:
 
