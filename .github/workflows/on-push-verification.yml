@@ -28,6 +28,11 @@ jobs:
     - name: Run Microsoft Security DevOps Analysis
       uses: ./
       id: msdo
+      continue-on-error: true
+
+    - name: list msdo node_modules
+      run: ls -d -a .gdn/i/node_modules/eslint/*
+      shell: bash
 
       # Upload alerts to the Security tab
     - name: Upload alerts to Security tab
