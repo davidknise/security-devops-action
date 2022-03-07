@@ -31,7 +31,7 @@ jobs:
       continue-on-error: true
 
     - name: list msdo node_modules
-      run: ls -d -a .gdn/i/node_modules/eslint/*
+      run: ls -a .gdn/i/node_modules/eslint/*
       shell: bash
 
       # Upload alerts to the Security tab
