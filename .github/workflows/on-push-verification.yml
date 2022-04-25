@@ -32,14 +32,14 @@ jobs:
     # Run analyzers
     - name: Run Microsoft Security DevOps Analysis
       uses: ./
-      id: msdo
+      id: msdo2
       with:
         tools: bandit
 
     # Run analyzers
     - name: Run Microsoft Security DevOps Analysis
       uses: ./
-      id: msdo
+      id: msdo3
       with:
         tools: 'binskim,terrascan'
 
