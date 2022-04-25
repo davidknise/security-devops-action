@@ -29,6 +29,21 @@ jobs:
       uses: ./
       id: msdo
 
+    # Run analyzers
+    - name: Run Microsoft Security DevOps Analysis
+      uses: ./
+      id: msdo
+      with:
+        tools: bandit
+
+    # Run analyzers
+    - name: Run Microsoft Security DevOps Analysis
+      uses: ./
+      id: msdo
+      with:
+        tools: 'binskim,terrascan'
+
+
       # Upload alerts to the Security tab
     - name: Upload alerts to Security tab
       uses: github/codeql-action/upload-sarif@v1
